@@ -29,6 +29,7 @@
                 <c:forEach var="score" items="${scoreList}">
                     <tr>
                         <td>${score.studentNumber}</td>
+                        <td><a href="/score/detail?studentNumber=${score.studentNumber}">${score.name}</a></td>
                         <td>${score.name}</td>
                         <td>${score.korScore}</td>
                         <td>${score.mathScore}</td>
@@ -45,16 +46,16 @@
             위와 같이 적을 경우 인식 주소 ㅣ http://localhost:8181/score/register -->
       <form action="/score/register" method="POST">
         <label for="user-name" class="form-label">유저이름</label>
-        <input type="email" class="form-control" id="user-name" name="name">
+        <input type="text" class="form-control" id="user-name" name="name">
 
-        <label for="user-name" class="form-label">국어성적</label>
-        <input type="email" class="form-control" id="user-name" name="korScore" min="0">
+        <label for="user-kor" class="form-label">국어성적</label>
+        <input type="number" class="form-control" id="user-kor" name="korScore" min="0">
 
-        <label for="user-name" class="form-label">수학성적</label>
-        <input type="email" class="form-control" id="user-name" name="mathScore" min="0">
+        <label for="user-math" class="form-label">수학성적</label>
+        <input type="number" class="form-control" id="user-math" name="mathScore" min="0">
 
-        <label for="user-name" class="form-label">영어성적</label>
-        <input type="email" class="form-control" id="user-name" name="engScore" min="0">
+        <label for="user-eng" class="form-label">영어성적</label>
+        <input type="number" class="form-control" id="user-eng" name="engScore" min="0">
 
         <input type="submit" value="제출하기">
       </form>
