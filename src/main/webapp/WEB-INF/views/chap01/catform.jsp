@@ -9,7 +9,7 @@
 <body>
     <h1>고양이 정보 등록하기</h1>
         <!-- 폼 데이터 전송경로는 애매하면 전체경로를 다 적습니다.-->
-    <form action="http://localhost:8080/chap01/cat" method="POST">
+    <form action="http://localhost:8181/chap01/cat" method="POST">
         고양이이름 : <input type="text" name="name"><br/>
         고양이나이 : <input type="number" name="age"><br/>
         고양이품종 : <input type="text" name="kind"><br/>
