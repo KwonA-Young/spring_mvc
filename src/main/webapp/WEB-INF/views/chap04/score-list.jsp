@@ -33,7 +33,7 @@
                         <td>${score.name}</td>
                         <td>${score.korScore}</td>
                         <td>${score.mathScore}</td>
-                        <td>${score.engSocre}</td>
+                        <td>${score.engScore}</td>
                         <td>${score.korScore + score.mathScore + score.engScore}</td>
                         <td>${(score.korScore + score.mathScore + score.engScore)/3}</td>
                     </tr>

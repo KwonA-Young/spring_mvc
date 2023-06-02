@@ -39,13 +39,14 @@ public class ScoreController {
     @RequestMapping(value = "/list", method = RequestMethod.GET)
     public String list(Model model) {
         System.out.println("/score/list : GET방식");
+
         // repository 객체 내부의 전체글 조회기능을 이용해 자료를 받아서 scoreList 변수에 저장해주세요.
         List<Score> scoreList = repository.findAll();
         System.out.println(scoreList);
         // 해당 성적 전체를 실어서 화면단으로 보낼 수 있게 적재하기.
         model.addAttribute("scoreList", scoreList);
         //  /WEB-INF/views/chap04/score-list.jsp
-        return "chap04/score/list";
+        return "chap04/score-list";
         }
 
         // 2. 성적 정보 등록 처리 요청
